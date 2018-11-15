@@ -11,10 +11,11 @@
 `npm -v` or `npm --version` </br>
 
 ## how to run this bad boy
-### on windows / mac
 1. clone the project to your local directory
 2. go to terminal > go to the project directory 
 3. type `expo start`
+
+### on windows / mac
 4. start andriod studio 
 5. go to tool bar, Tools > AVD manager > launch the elmuator
 6. wait for it...
