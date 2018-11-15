@@ -1,14 +1,14 @@
 # 2.0mobile
 
 ## set up
-`brew install node`
-`brew install watchman` <--- it watches your file of the changes
-`npm install` <------- for the package node module <----- once dependeices has changed
-`npm install -g react-native-cli`
+`brew install node` </br>
+`brew install watchman` <--- it watches your file of the changes </br>
+`npm install` <------- for the package node module <----- once dependeices has changed </br>
+`npm install -g react-native-cli` </br>
 
 ### verify successful installation by checking-
-`node -v` or `node --version`
-`npm -v` or `npm --version`
+`node -v` or `node --version` </br>
+`npm -v` or `npm --version` </br>
 
 ## how to run this bad boy
 ### on windows / mac
