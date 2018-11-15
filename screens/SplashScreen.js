@@ -7,35 +7,24 @@ import {
 } from 'react-native';
 
 class SplashScreen extends Component {
-	/** the clear out the header from Splash screen **/
 	static navigationOptions = {
 		header: null
 	}
-
+	
 	render() {
 		return (
 			<ImageBackground 
 				source={require('../app/img/FanTipper-App-2-00-AppSplash.jpg')} 
-				style={styles.imageBackground}
-				resizeMode='cover' >
+				style={styles.imageBackground}>
 				<View style={styles.container}>
-					<Button title="Continue with Facebook" 
-							onPress={() => this.props.navigation.navigate('Home')} 
-							style={styles.button} />
-					<Button title="Continue with Google" 
-							onPress={() => this.props.navigation.navigate('Home')} 
-							style={styles.button} />
-					<Button title="Login with email" 
-							onPress={() => this.props.navigation.navigate('Home')} 
-							style={styles.button} />
-					<Button title="Sign Up" 
-							onPress={() => this.props.navigation.navigate('Login')} 
-							style={styles.button} />
-
+					<Button title="LOG IN" onPress={() => 
+						this.props.navigation.navigate('LoginScreen')}
+							accessibilityLabel="Touch here to login to FanTipper" 
+							color="#841584" />
+					<Button title="SIGN UP" onPress={() => 
+						this.props.navigation.navigate('RegisterScreen')} />
 				</View>
-			
 			</ImageBackground>
-
 		);
 	}
 }
@@ -54,12 +43,5 @@ const styles = StyleSheet.create ({
 		alignSelf: 'stretch',
 		width: '100%',
 		height: '100%'
-	},
-	button: {
-		padding: 25,
-		backgroundColor: '#00d278',
-		borderColor: 'black',
-		color: 'red'
-
 	}
 });

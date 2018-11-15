@@ -3,20 +3,21 @@ import {
 	StyleSheet,
 	View,
 	Text,
-	Button
 } from 'react-native';
-
+import { Header, Left, Right, Icon } from 'native-base'
 
 class HomeScreen extends Component {
-//export default class ProfilePage extends Component {
+		static navigationOptions = {
+		header: null,
+		tabBarVisible: true
+	}
 
 	render() {
 		return (
 			<View style={styles.container}>
-				<Text>this is home screen</Text>
-				<Button title="go back to login screen" 
-						onPress={() => this.props.navigation.goBack()}/>
-
+				<Text style={styles.font}> Welcome to Fan Tipper, </Text>
+				<Text style={styles.font}> the world's first social  </Text>
+				<Text style={styles.font}> tipping platform. </Text>
 			</View>
 
 		);
